@@ -55,3 +55,57 @@ fruta.reduce((acumulador,fruta) =>{
     return acumulador + ', '+ fruta;
 
 }, '');
+
+// 1 Crea un arreglo con 5 números y muestra el tercero en consola.
+let numeros =[1,2,3,4,5];
+console.log(numeros[2]);
+
+//2 Agrega un nuevo elemento a un arreglo usando push.
+numeros.push(6);
+console.log(numeros);
+
+//3 Elimina el último elemento de un arreglo y muéstralo en consola.
+numeros.pop();
+console.log(numeros);
+
+//4 Usa map para multiplicar por 2 cada número de un arreglo.
+let numeros_multiplicar = numeros.map(num => num * 2);
+console.log(numeros_multiplicar);
+
+//5 Filtra un arreglo para obtener solo los números mayores a 10.
+let filtrar = [5,22,44,6,7];
+let mayores= filtrar.filter(num => num > 10);
+console.log(mayores);
+
+//6 Declara un objeto con las propiedades nombre, edad, y profesión.
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    profesion: "Desarrollador"
+};
+console.log(persona);       
+
+//7 Accede y muestra el valor de una propiedad de un objeto.
+console.log("nombre: "+ persona.nombre);
+
+//8 Agrega un método a un objeto que devuelva un saludo personalizado.
+persona.saludar = function() {
+    return `Hola, mi nombre es ${this.nombre} y soy ${this.profesion}.`;
+}
+console.log(persona.saludar());
+
+//9 Usa reduce para sumar todos los números de un arreglo.
+let suma = numeros.reduce((acumulador,num )=> acumulador + num, 0);
+console.log("suma: "+ suma);
+
+//10 Combina arreglos y objetos: Crea un arreglo de objetos y recórrelo para mostrar el nombre de cada elemento.
+
+let productos=[
+    
+    {nombre: "camisa", precio: 20},
+    {nombre: "pantalon", precio: 30},
+    {nombre: "zapatos", precio: 50}
+];  
+productos.forEach(producto => {
+    console.log("Producto: " + producto.nombre);
+});
