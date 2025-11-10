@@ -68,8 +68,8 @@ h1{
 }
 
 .sidebar .profile-pic{
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    height: 150px;
     background: linear-gradient(135deg,#1b6fb3,#123a66);
     border-radius: 50%;
     margin: 0 auto 1rem auto;
@@ -137,5 +137,6 @@ h1{
 .site-footer{ background: #f7f9fb; padding: 1.25rem 0; }
 
 @media (max-width: 576px){
-    .hero-pic{ width: 120px; height: 120px; }
+    
 }
+
