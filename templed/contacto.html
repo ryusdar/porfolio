@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+   
+</head>
+<body>
+
+<header>
+    <h1 class="text-center mt-3">Contáctanos</h1>
+    <div class="text-center">
+        <a href="../index.html" class="btn btn-outline-primary mt-2">Volver al inicio</a>
+        <a href="about.html" class="btn btn-outline-primary mt-2">ver Currículum</a>
+    </div>
+</header>
+
+<main class="d-flex justify-content-center align-items-center vh-100">
+    <div class="contact-card p-4 shadow rounded">
+        <h2 class="text-center mb-4">Envíanos un mensaje</h2>
+
+        <form>
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" class="form-control mb-3" name="fname" required>
+
+            <label for="email">Gmail:</label>
+            <input type="text" id="email" class="form-control mb-3" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" class="form-control mb-3" rows="4" name="user_message" required></textarea>
+
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+    </div>
+</main>
+
+<footer class="text-center mt-4 mb-3">
+    <p>&copy; 2025 Mi Empresa</p>
+</footer>
+<script src="../js/contacto.js"></script>
+
+</body>
+</html>
